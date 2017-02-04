@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.study.customview.MainActivity">
+
+
+        <Button
+            android:id="@+id/btn_draw_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制颜色"/>
+
+        <Button
+            android:id="@+id/btn_draw_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制点"/>
+
+        <Button
+            android:id="@+id/btn_draw_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制直线"/>
+
+        <Button
+            android:id="@+id/btn_draw_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制矩形"/>
+
+        <Button
+            android:id="@+id/btn_draw_round_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制圆角矩形"/>
+
+        <Button
+            android:id="@+id/btn_draw_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制椭圆"/>
+
+        <Button
+            android:id="@+id/btn_draw_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制圆"/>
+        <Button
+            android:id="@+id/btn_draw_arc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制圆弧"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
