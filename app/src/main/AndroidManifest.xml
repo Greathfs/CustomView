@@ -15,21 +15,23 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ColorActivity">
+        <activity android:name=".ui.ColorActivity">
         </activity>
-        <activity android:name=".PointActivity">
+        <activity android:name=".ui.PointActivity">
         </activity>
-        <activity android:name=".RectActivity">
+        <activity android:name=".ui.RectActivity">
         </activity>
-        <activity android:name=".LineActivity">
+        <activity android:name=".ui.LineActivity">
         </activity>
-        <activity android:name=".RoundRectActivity">
+        <activity android:name=".ui.RoundRectActivity">
         </activity>
-        <activity android:name=".OvalActivity">
+        <activity android:name=".ui.OvalActivity">
         </activity>
-        <activity android:name=".CircleActivity">
+        <activity android:name=".ui.CircleActivity">
         </activity>
-        <activity android:name=".ArcActivity">
+        <activity android:name=".ui.ArcActivity">
+        </activity>
+        <activity android:name=".ui.CircularActivity">
         </activity>
     </application>
 

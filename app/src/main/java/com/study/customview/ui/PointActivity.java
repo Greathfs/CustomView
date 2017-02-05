@@ -1,13 +1,15 @@
-package com.study.customview;
+package com.study.customview.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RoundRectActivity extends AppCompatActivity {
+import com.study.customview.R;
+
+public class PointActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_round_rect);
+        setContentView(R.layout.activity_point);
     }
 }

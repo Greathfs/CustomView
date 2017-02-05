@@ -1,13 +1,15 @@
-package com.study.customview;
+package com.study.customview.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ColorActivity extends AppCompatActivity {
+import com.study.customview.R;
+
+public class LineActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_color);
+        setContentView(R.layout.activity_line);
     }
 }
