@@ -1,15 +1,15 @@
-package com.study.customview.ui;
+package com.study.customview.ui.circular;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.study.customview.R;
 
-public class OvalActivity extends AppCompatActivity {
+public class CircularActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oval);
+        setContentView(R.layout.activity_circular);
     }
 }

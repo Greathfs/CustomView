@@ -1,34 +1,32 @@
-package com.study.customview.widget;
+package com.study.customview.widget.basicImage;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
 /**
  * Created by HFS on 2017/2/4.
- * 椭圆V
+ * 直线View
  */
 
-public class OvalView extends View {
+public class LineView extends View {
     private Paint mPaint=new Paint();
 
-    public OvalView(Context context) {
+    public LineView(Context context) {
         super(context);
 
         initPaint();
     }
 
-    public OvalView(Context context, AttributeSet attrs) {
+    public LineView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initPaint();
     }
 
-    public OvalView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public LineView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initPaint();
     }
@@ -45,18 +43,12 @@ public class OvalView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
-        //为了说明绘制椭圆原理这里加一段代码
-        Rect rect=new Rect(100,100,800,400);
-        mPaint.setColor(Color.BLUE);
-        canvas.drawRect(rect,mPaint);
-
-        //第一种
-        RectF rectF=new RectF(100,100,800,400);
-        mPaint.setColor(Color.BLACK);
-        canvas.drawOval(rectF,mPaint);
-
-        //第二种
-//        canvas.drawOval(100,100,800,400,mPaint);
+        //从（200，300）这个点开始 到(500,600)这个点结束
+        canvas.drawLine(200,400,500,600,mPaint);
+        // 绘制一组线 每四数字(两个点的坐标)确定一条线
+        canvas.drawLines(new float[]{
+                100,200,200,200,
+                100,300,200,300
+        },mPaint);
     }
 }

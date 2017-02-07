@@ -1,4 +1,4 @@
-package com.study.customview.widget;
+package com.study.customview.widget.basicImage;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,24 +11,24 @@ import android.view.View;
 
 /**
  * Created by HFS on 2017/2/4.
- * 圆View
+ * 矩形View
  */
 
-public class CircleView extends View {
+public class RectView extends View {
     private Paint mPaint=new Paint();
 
-    public CircleView(Context context) {
+    public RectView(Context context) {
         super(context);
 
         initPaint();
     }
 
-    public CircleView(Context context, AttributeSet attrs) {
+    public RectView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initPaint();
     }
 
-    public CircleView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public RectView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initPaint();
     }
@@ -45,7 +45,14 @@ public class CircleView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //在(600，600)这个点绘制一个半径为300的圆
-        canvas.drawCircle(600,600,300,mPaint);
+
+        //第一种
+        canvas.drawRect(200,300,500,600,mPaint);
+        //第二种
+        Rect rect=new Rect(200,300,500,600);
+        canvas.drawRect(rect,mPaint);
+        //第三种
+        RectF rectF=new RectF(200,300,500,600);
+        canvas.drawRect(rectF,mPaint);
     }
 }

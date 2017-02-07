@@ -1,15 +1,15 @@
-package com.study.customview.ui;
+package com.study.customview.ui.basicImage;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.study.customview.R;
 
-public class PointActivity extends AppCompatActivity {
+public class ColorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_point);
+        setContentView(R.layout.activity_color);
     }
 }

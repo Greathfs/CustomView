@@ -1,4 +1,4 @@
-package com.study.customview.widget;
+package com.study.customview.widget.basicImage;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,24 +11,24 @@ import android.view.View;
 
 /**
  * Created by HFS on 2017/2/4.
- * 矩形View
+ * 椭圆V
  */
 
-public class RectView extends View {
+public class OvalView extends View {
     private Paint mPaint=new Paint();
 
-    public RectView(Context context) {
+    public OvalView(Context context) {
         super(context);
 
         initPaint();
     }
 
-    public RectView(Context context, AttributeSet attrs) {
+    public OvalView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initPaint();
     }
 
-    public RectView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public OvalView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initPaint();
     }
@@ -46,13 +46,17 @@ public class RectView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        //第一种
-        canvas.drawRect(200,300,500,600,mPaint);
-        //第二种
-        Rect rect=new Rect(200,300,500,600);
+        //为了说明绘制椭圆原理这里加一段代码
+        Rect rect=new Rect(100,100,800,400);
+        mPaint.setColor(Color.BLUE);
         canvas.drawRect(rect,mPaint);
-        //第三种
-        RectF rectF=new RectF(200,300,500,600);
-        canvas.drawRect(rectF,mPaint);
+
+        //第一种
+        RectF rectF=new RectF(100,100,800,400);
+        mPaint.setColor(Color.BLACK);
+        canvas.drawOval(rectF,mPaint);
+
+        //第二种
+//        canvas.drawOval(100,100,800,400,mPaint);
     }
 }

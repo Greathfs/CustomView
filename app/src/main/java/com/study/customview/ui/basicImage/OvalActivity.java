@@ -1,15 +1,15 @@
-package com.study.customview.ui;
+package com.study.customview.ui.basicImage;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.study.customview.R;
 
-public class RoundRectActivity extends AppCompatActivity {
+public class OvalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_round_rect);
+        setContentView(R.layout.activity_oval);
     }
 }

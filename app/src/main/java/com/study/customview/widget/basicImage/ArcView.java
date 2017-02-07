@@ -1,4 +1,4 @@
-package com.study.customview.widget;
+package com.study.customview.widget.basicImage;
 
 import android.content.Context;
 import android.graphics.Canvas;

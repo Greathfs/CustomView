@@ -15,23 +15,35 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ColorActivity">
+        <activity android:name=".ui.basicImage.ColorActivity">
         </activity>
-        <activity android:name=".ui.PointActivity">
+        <activity android:name=".ui.basicImage.PointActivity">
         </activity>
-        <activity android:name=".ui.RectActivity">
+        <activity android:name=".ui.basicImage.RectActivity">
         </activity>
-        <activity android:name=".ui.LineActivity">
+        <activity android:name=".ui.basicImage.LineActivity">
         </activity>
-        <activity android:name=".ui.RoundRectActivity">
+        <activity android:name=".ui.basicImage.RoundRectActivity">
         </activity>
-        <activity android:name=".ui.OvalActivity">
+        <activity android:name=".ui.basicImage.OvalActivity">
         </activity>
-        <activity android:name=".ui.CircleActivity">
+        <activity android:name=".ui.basicImage.CircleActivity">
         </activity>
-        <activity android:name=".ui.ArcActivity">
+        <activity android:name=".ui.basicImage.ArcActivity">
         </activity>
-        <activity android:name=".ui.CircularActivity">
+        <activity android:name=".ui.circular.CircularActivity">
+        </activity>
+        <activity android:name=".ui.canvas.TranslateActivity">
+        </activity>
+        <activity android:name=".ui.canvas.RotateActivity">
+        </activity>
+        <activity android:name=".ui.canvas.ScaleActivity">
+        </activity>
+        <activity android:name=".ui.canvas.SkewActivity">
+        </activity>
+        <activity android:name=".ui.canvas.ClipActivity">
+        </activity>
+        <activity android:name=".ui.canvas.SaveRestoreActivity">
         </activity>
     </application>
 
