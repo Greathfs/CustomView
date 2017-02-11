@@ -45,6 +45,10 @@
         </activity>
         <activity android:name=".ui.canvas.SaveRestoreActivity">
         </activity>
+        <activity android:name=".ui.text.DrawTextActivity">
+        </activity>
+        <activity android:name=".ui.text.DrawActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_draw_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.study.customview.ui.text.DrawTextActivity">
+
+    <Button
+        android:id="@+id/btn_paint_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint样式不同"/>
+    <Button
+        android:id="@+id/btn_text_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text样式不同"/>
+    <Button
+        android:id="@+id/btn_other_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其它"/>
+
+    <Button
+        android:id="@+id/btn_position_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绘制指定位置Text"/>
+    <Button
+        android:id="@+id/btn_path_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据路径绘制Text"/>
+
+</LinearLayout>
