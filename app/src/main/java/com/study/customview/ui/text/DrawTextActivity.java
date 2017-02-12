@@ -21,7 +21,8 @@ public class DrawTextActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_paint_diff, R.id.btn_text_diff, R.id.btn_other_diff,R.id.btn_position_view,R.id.btn_path_view})
+    @OnClick({R.id.btn_paint_diff, R.id.btn_text_diff, R.id.btn_other_diff,R.id.btn_position_view,R.id.btn_path_view,
+                R.id.btn_text_align_view,R.id.btn_fontMetrics_view,R.id.btn_center_view})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_paint_diff:
@@ -38,6 +39,15 @@ public class DrawTextActivity extends AppCompatActivity {
                 break;
             case R.id.btn_path_view:
                 jump(DrawActivity.class,"4");
+                break;
+            case R.id.btn_text_align_view:
+                jump(DrawActivity.class,"5");
+                break;
+            case R.id.btn_fontMetrics_view:
+                jump(DrawActivity.class,"6");
+                break;
+            case R.id.btn_center_view:
+                jump(DrawActivity.class,"7");
                 break;
         }
     }

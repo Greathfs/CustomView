@@ -35,4 +35,21 @@
         android:layout_height="wrap_content"
         android:text="根据路径绘制Text"/>
 
+    <Button
+        android:id="@+id/btn_text_align_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="根据设置TextAlign属性绘制Text"/>
+
+    <Button
+        android:id="@+id/btn_fontMetrics_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FontMetrics"/>
+    <Button
+        android:id="@+id/btn_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绘制中文垂直居中"/>
+
 </LinearLayout>

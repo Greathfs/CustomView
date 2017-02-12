@@ -37,5 +37,23 @@
         android:layout_height="wrap_content"
         android:visibility="gone"/>
 
+    <com.study.customview.widget.text.TextAlignView
+        android:id="@+id/text_align_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.study.customview.widget.text.FontMetricsView
+        android:id="@+id/fontmetrics_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.study.customview.widget.text.CenterText
+        android:id="@+id/center_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
 
 </LinearLayout>

@@ -5,10 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.study.customview.R;
+import com.study.customview.widget.text.CenterText;
+import com.study.customview.widget.text.FontMetricsView;
 import com.study.customview.widget.text.OtherDiffView;
 import com.study.customview.widget.text.PaintDiffView;
 import com.study.customview.widget.text.PathView;
 import com.study.customview.widget.text.PositionView;
+import com.study.customview.widget.text.TextAlignView;
 import com.study.customview.widget.text.TextDiffView;
 
 import butterknife.BindView;
@@ -26,6 +29,12 @@ public class DrawActivity extends AppCompatActivity {
     PositionView mPositionView;
     @BindView(R.id.path_text_view)
     PathView mPathView;
+    @BindView(R.id.text_align_view)
+    TextAlignView mTextAlignView;
+    @BindView(R.id.fontmetrics_view)
+    FontMetricsView mFontMetricsView;
+    @BindView(R.id.center_view)
+    CenterText mCenterText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,16 @@ public class DrawActivity extends AppCompatActivity {
                 break;
             case "4":
                 mPathView.setVisibility(View.VISIBLE);
+                break;
+            case "5":
+                mTextAlignView.setVisibility(View.VISIBLE);
+                break;
+
+            case "6":
+                mFontMetricsView.setVisibility(View.VISIBLE);
+                break;
+            case "7":
+                mCenterText.setVisibility(View.VISIBLE);
                 break;
         }
 
