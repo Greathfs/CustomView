@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_path_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.study.customview.ui.path.PathViewActivity">
+
+    <com.study.customview.widget.path.LinePathView
+        android:id="@+id/path_line_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.study.customview.widget.path.RecfPathView
+        android:id="@+id/path_recf_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.study.customview.widget.path.RoundRecfPathView
+        android:id="@+id/path_round_recf_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.study.customview.widget.path.CirclePathView
+        android:id="@+id/path_circle_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.study.customview.widget.path.OvalPathView
+        android:id="@+id/path_oval_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <com.study.customview.widget.path.ArcPathView
+        android:id="@+id/path_arc_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</LinearLayout>

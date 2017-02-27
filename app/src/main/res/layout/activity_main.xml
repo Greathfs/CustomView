@@ -101,6 +101,12 @@
             android:layout_height="wrap_content"
             android:text="绘制Text"/>
 
+        <Button
+            android:id="@+id/btn_draw_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制Path"/>
+
     </LinearLayout>
 
 </ScrollView>
