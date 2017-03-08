@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_path"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.study.customview.ui.path.PathActivity">
 
-    <Button
-        android:id="@+id/btn_line_path"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="直线 Path"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
 
-    <Button
-        android:id="@+id/btn_rect_path"
+    <LinearLayout
+        android:id="@+id/activity_path"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="矩形 Path"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.study.customview.ui.path.PathActivity">
 
-    <Button
-        android:id="@+id/btn_round_rect_path"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="圆角矩形 Path"/>
-    <Button
-        android:id="@+id/btn_circle_path"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="圆 Path"/>
-    <Button
-        android:id="@+id/btn_oval_path"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="椭圆 Path"/>
-    <Button
-        android:id="@+id/btn_arc_path"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="弧形矩形 Path"/>
+        <Button
+            android:id="@+id/btn_line_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="直线 Path"/>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_rect_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="矩形 Path"/>
+
+        <Button
+            android:id="@+id/btn_round_rect_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圆角矩形 Path"/>
+
+        <Button
+            android:id="@+id/btn_circle_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圆 Path"/>
+
+        <Button
+            android:id="@+id/btn_oval_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="椭圆 Path"/>
+
+        <Button
+            android:id="@+id/btn_arc_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弧形矩形 Path"/>
+
+        <Button
+            android:id="@+id/btn_bezier_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="贝塞尔曲线（一）绘制正弦曲线"/>
+
+        <Button
+            android:id="@+id/btn_bezier_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="贝塞尔曲线（二）绘制画板"/>
+
+        <Button
+            android:id="@+id/btn_bezier_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="贝塞尔曲线（三）绘制水波纹"/>
+
+    </LinearLayout>
+</ScrollView>
+
