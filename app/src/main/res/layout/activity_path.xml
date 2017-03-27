@@ -50,6 +50,18 @@
             android:text="弧形矩形 Path"/>
 
         <Button
+            android:id="@+id/btn_bezier_quadTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="二阶贝塞尔曲线模拟"/>
+
+        <Button
+            android:id="@+id/btn_bezier_cubicTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="三阶贝塞尔曲线模拟"/>
+
+        <Button
             android:id="@+id/btn_bezier_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

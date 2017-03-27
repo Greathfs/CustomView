@@ -19,49 +19,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
     <com.study.customview.widget.path.RoundRecfPathView
         android:id="@+id/path_round_recf_path"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
     <com.study.customview.widget.path.CirclePathView
         android:id="@+id/path_circle_path"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
     <com.study.customview.widget.path.OvalPathView
         android:id="@+id/path_oval_path"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
     <com.study.customview.widget.path.ArcPathView
         android:id="@+id/path_arc_path"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
+    <com.study.customview.widget.path.BezierQuadTo
+        android:id="@+id/path_bezier_quadTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.study.customview.widget.path.BezierCubicTo
+        android:id="@+id/path_bezier_cubicTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
     <com.study.customview.widget.path.BeZierViewOne
         android:id="@+id/path_bezier_one"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"/>
+
     <com.study.customview.widget.path.BeZierViewTwo
         android:id="@+id/path_bezier_two"
         android:layout_width="match_parent"
-        android:layout_weight="1"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone"/>
+
     <Button
         android:id="@+id/btn_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="reset"/>
+        android:text="reset"
+        android:visibility="gone"/>
 
     <com.study.customview.widget.path.WaveBezier
         android:id="@+id/path_wave_bezier"
         android:layout_width="match_parent"
-        android:layout_weight="1"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:visibility="gone"/>
 
 

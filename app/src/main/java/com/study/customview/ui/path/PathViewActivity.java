@@ -11,6 +11,8 @@ import com.study.customview.R;
 import com.study.customview.widget.path.ArcPathView;
 import com.study.customview.widget.path.BeZierViewOne;
 import com.study.customview.widget.path.BeZierViewTwo;
+import com.study.customview.widget.path.BezierCubicTo;
+import com.study.customview.widget.path.BezierQuadTo;
 import com.study.customview.widget.path.CirclePathView;
 import com.study.customview.widget.path.LinePathView;
 import com.study.customview.widget.path.OvalPathView;
@@ -36,6 +38,10 @@ public class PathViewActivity extends AppCompatActivity {
     OvalPathView mPathOvalPath;
     @BindView(R.id.path_arc_path)
     ArcPathView mPathArcPath;
+    @BindView(R.id.path_bezier_quadTo)
+    BezierQuadTo mBezierQuadTo;
+    @BindView(R.id.path_bezier_cubicTo)
+    BezierCubicTo mBezierCubicTo;
     @BindView(R.id.path_bezier_one)
     BeZierViewOne mBeZierViewOne;
     @BindView(R.id.path_bezier_two)
@@ -84,7 +90,12 @@ public class PathViewActivity extends AppCompatActivity {
                 mWaveBezier.setVisibility(View.VISIBLE);
                 mWaveBezier.startAnim();
                 break;
-
+            case "9":
+                mBezierQuadTo.setVisibility(View.VISIBLE);
+                break;
+            case "10":
+                mBezierCubicTo.setVisibility(View.VISIBLE);
+                break;
 
 
         }

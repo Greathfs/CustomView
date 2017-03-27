@@ -22,7 +22,7 @@ public class PathActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.btn_line_path, R.id.btn_rect_path, R.id.btn_round_rect_path, R.id.btn_circle_path, R.id.btn_oval_path, R.id.btn_arc_path, R.id.btn_bezier_one,
-            R.id.btn_bezier_two, R.id.btn_bezier_three})
+            R.id.btn_bezier_two, R.id.btn_bezier_three, R.id.btn_bezier_quadTo, R.id.btn_bezier_cubicTo})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_line_path:
@@ -51,6 +51,12 @@ public class PathActivity extends AppCompatActivity {
                 break;
             case R.id.btn_bezier_three:
                 jump(PathViewActivity.class, "8");
+                break;
+            case R.id.btn_bezier_quadTo:
+                jump(PathViewActivity.class, "9");
+                break;
+            case R.id.btn_bezier_cubicTo:
+                jump(PathViewActivity.class, "10");
                 break;
         }
     }

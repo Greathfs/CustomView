@@ -58,9 +58,11 @@ public class WaveBezier extends View {
 
 //        mPath.moveTo(-mItemWaveLength + dx, getHeight());
         //实现向下移动动画
-        mPath.moveTo(-mItemWaveLength + dx, getHeight() / 2 + dy);
+        mPath.moveTo(-mItemWaveLength + dx, dy);
+        dy += 1;
         //画出当前屏幕中可能容得下的所有波
         for (int i = 0; i < mWaveCount; i++) {
+            //rQuadTo 相对位置
             mPath.rQuadTo(halfWaveLen / 2, -100, halfWaveLen, 0);
             mPath.rQuadTo(halfWaveLen / 2, 100, halfWaveLen, 0);
         }
