@@ -54,11 +54,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="绘制圆"/>
+
         <Button
             android:id="@+id/btn_draw_arc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="绘制圆弧"/>
+
         <Button
             android:id="@+id/btn_draw_circular"
             android:layout_width="match_parent"
@@ -70,31 +72,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas平移"/>
+
         <Button
             android:id="@+id/btn_canvas_rotate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas旋转"/>
+
         <Button
             android:id="@+id/btn_canvas_scale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas缩放"/>
+
         <Button
             android:id="@+id/btn_canvas_skew"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas扭曲"/>
+
         <Button
             android:id="@+id/btn_canvas_clip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas裁剪"/>
+
         <Button
             android:id="@+id/btn_canvas_save_restore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Canvas保存和恢复"/>
+
         <Button
             android:id="@+id/btn_draw_text"
             android:layout_width="match_parent"
@@ -106,6 +114,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="绘制Path"/>
+
+
+        <Button
+            android:id="@+id/btn_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绘制进度条"/>
 
     </LinearLayout>
 

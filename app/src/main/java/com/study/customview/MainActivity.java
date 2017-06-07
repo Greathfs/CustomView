@@ -21,6 +21,7 @@ import com.study.customview.ui.basicImage.PointActivity;
 import com.study.customview.ui.basicImage.RectActivity;
 import com.study.customview.ui.basicImage.RoundRectActivity;
 import com.study.customview.ui.path.PathActivity;
+import com.study.customview.ui.progress.ProgressActivity;
 import com.study.customview.ui.text.DrawTextActivity;
 
 import butterknife.ButterKnife;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick({R.id.btn_draw_color, R.id.btn_draw_point, R.id.btn_draw_line, R.id.btn_draw_rect, R.id.btn_draw_round_rect,
             R.id.btn_draw_oval, R.id.btn_draw_circle, R.id.btn_draw_arc, R.id.btn_draw_circular, R.id.btn_canvas_translate,
             R.id.btn_canvas_rotate, R.id.btn_canvas_clip, R.id.btn_canvas_scale, R.id.btn_canvas_skew, R.id.btn_canvas_save_restore,
-            R.id.btn_draw_text, R.id.btn_draw_path})
+            R.id.btn_draw_text, R.id.btn_draw_path, R.id.btn_progress_view})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_draw_color:
@@ -88,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_draw_path:
                 jump(PathActivity.class);
+                break;
+
+            case R.id.btn_progress_view:
+                jump(ProgressActivity.class);
                 break;
 
             default:

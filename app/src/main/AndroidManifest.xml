@@ -53,6 +53,8 @@
         </activity>
         <activity android:name=".ui.path.PathViewActivity">
         </activity>
+        <activity android:name=".ui.progress.ProgressActivity">
+        </activity>
     </application>
 
 </manifest>
