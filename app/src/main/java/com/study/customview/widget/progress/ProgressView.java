@@ -12,13 +12,10 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
 import com.study.customview.utils.CommonUtils;
-
-import java.text.DecimalFormat;
 
 /**
  * Created by HFS on 2017/6/7.
@@ -294,8 +291,11 @@ public class ProgressView extends View {
      * @param canvas
      */
     private void drawTriangle(Canvas canvas) {
+        //三角形第一个点
         path.moveTo(mTipWidth / 2 - mTriangleHeight + mMoveDis, mTipHeight);
+        //三角形第二个点
         path.lineTo(mTipWidth / 2 + mMoveDis, mTipHeight + mTriangleHeight);
+        //三角形第三个点
         path.lineTo(mTipWidth / 2 + mTriangleHeight + mMoveDis, mTipHeight);
         canvas.drawPath(path, mTipPaint);
         path.reset();
@@ -349,6 +349,7 @@ public class ProgressView extends View {
      * @return
      */
     public ProgressView setProgress(float progress) {
+        mMoveDis=0;
         mTotalProgress = progress;
         initAnimation();
         return this;
